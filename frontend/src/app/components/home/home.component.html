@@ -1,0 +1,47 @@
+<div style="text-align: center; margin-top: 20px">
+  <h1>Nuevo Pedido</h1>
+  <div
+    style="
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      margin-top: 20px;
+    "
+  >
+    <app-product-card
+      *ngFor="let product of products"
+      [imageUrl]="'assets/' + product.name + '.jpg'"
+      [productName]="product.name"
+    ></app-product-card>
+  </div>
+  <div
+    style="
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      margin-top: 20px;
+    "
+  >
+    <!-- Chocolate -->
+    <div style="text-align: center">
+      <img
+        src="assets/chocolate.jpg"
+        alt="Chocolate"
+        style="width: 150px; height: auto"
+      />
+      <div style="margin-top: 10px">
+        <label for="chocolateUnits">Unidades:</label>
+        <input id="chocolateUnits" type="number" min="0" style="width: 60px" />
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 20px">
+    <h1>New Order</h1>
+    <button style="margin-top: 20px" routerLink="/order-confirmation">
+      Pay
+    </button>
+  </div>
+</div>

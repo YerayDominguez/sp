@@ -50,7 +50,6 @@
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-/backend/*.logs
 
 ### STS ###
 /backend/.apt_generated
@@ -73,5 +72,3 @@
 .idea
 .vscode
 
-
-backend/logs/
